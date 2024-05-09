@@ -1,3 +1,4 @@
+#include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
 int main()
@@ -6,21 +7,21 @@ int t;
 cin>>t;
 while(t--)
 {
-int n,temp=0;
+int n,sum=0;
 cin>>n;
-int a[n-1];
-for(int i=0;i<n-1;i++)
+int a[n];
+for(int i=0;i<n;i++)
 {
     cin>>a[i];
 }
-temp=1000;
-cout<<temp<<' ';
+sort(a,a+n);
 for(int i=0;i<n-1;i++)
 {
-    temp=temp+a[i];
-    cout<<temp<<' ';
+    sum=sum+(a[i]|a[i+1]);
 }
-cout<<"\n";
+cout<<sum<<endl;
 }
+
+
 
 }
