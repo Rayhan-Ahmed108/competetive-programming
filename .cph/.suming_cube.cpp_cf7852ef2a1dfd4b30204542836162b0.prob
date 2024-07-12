@@ -1,0 +1,1 @@
+{"name":"Local: suming_cube","url":"/Users/rayhanahmedjeyam/Programming/suming_cube.cpp","tests":[{"id":1718296845371,"input":"7\n1\n2\n4\n34\n35\n16\n703657519796\n","output":"NO\nYES\nNO\nNO\nYES\nYES\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/suming_cube.cpp","group":"local","local":true}

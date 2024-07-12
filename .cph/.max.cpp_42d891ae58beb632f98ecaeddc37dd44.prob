@@ -1,0 +1,1 @@
+{"name":"Local: max","url":"/Users/rayhanahmedjeyam/Programming/max.cpp","tests":[{"id":1718386515141,"input":"5\n1\n2\n10\n25\n200\n","output":"YES\nNO\nYES\nNO\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/max.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: football","url":"/Users/rayhanahmedjeyam/Programming/football.cpp","tests":[{"id":1717932891777,"input":"5\nA\nABA\nABA\nA\nA\n","output":"A"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/football.cpp","group":"local","local":true}

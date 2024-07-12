@@ -1,0 +1,1 @@
+{"name":"Local: paris","url":"/Users/rayhanahmedjeyam/Programming/paris.cpp","tests":[{"id":1717410063626,"input":"(()(()))\n","output":"()(()())\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/paris.cpp","group":"local","local":true}

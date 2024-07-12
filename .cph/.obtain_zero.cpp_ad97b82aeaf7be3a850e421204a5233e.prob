@@ -1,0 +1,1 @@
+{"name":"Local: obtain_zero","url":"/Users/rayhanahmedjeyam/Programming/obtain_zero.cpp","tests":[{"id":1720681578866,"input":"3\n6 9\n1 1\n1 2\n","output":"YES\nNO\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/obtain_zero.cpp","group":"local","local":true}

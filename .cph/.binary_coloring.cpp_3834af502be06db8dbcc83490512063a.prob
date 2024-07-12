@@ -1,0 +1,1 @@
+{"name":"Local: binary_coloring","url":"/Users/rayhanahmedjeyam/Programming/binary_coloring.cpp","tests":[{"id":1716869660687,"input":"5\n1 2 3 4 5","output":"3.000000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/binary_coloring.cpp","group":"local","local":true}

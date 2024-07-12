@@ -1,0 +1,1 @@
+{"name":"Local: forbidden","url":"/Users/rayhanahmedjeyam/Programming/forbidden.cpp","tests":[{"id":1717233905126,"input":"2\n1 3\n391 555\n0 0\n9 4","output":"1337\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/forbidden.cpp","group":"local","local":true}

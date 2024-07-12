@@ -1,0 +1,1 @@
+{"name":"Local: chamo_array","url":"/Users/rayhanahmedjeyam/Programming/chamo_array.cpp","tests":[{"id":1719914696029,"input":"2\n2\n1 2\n5\n1 2 3 4 5\n","output":"1\n4\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/chamo_array.cpp","group":"local","local":true}

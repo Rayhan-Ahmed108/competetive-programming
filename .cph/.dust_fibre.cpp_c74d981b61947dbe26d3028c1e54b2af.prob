@@ -1,0 +1,1 @@
+{"name":"Local: dust_fibre","url":"/Users/rayhanahmedjeyam/Programming/dust_fibre.cpp","tests":[{"id":1717122384774,"input":"1\n3\n1 \n2\n1","output":"2"},{"id":1717122672840,"input":"1\n5\n1\n1\n2\n2\n3","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/dust_fibre.cpp","group":"local","local":true}

@@ -1,20 +1,38 @@
-#include<bits/stdc++.h>
-#include<string>
+#include <iostream>
+#include <vector>
+#include <bitset>
 using namespace std;
-int main(){
-string s;
-int n;
-cin>>s>>n;
-int sum=0,d=s.size();
-for(int i=0;i<d;i++)
+int solve()
 {
-    sum=sum+s[i]-49;
+    int a,b,temp=0;
+    cin>>a>>b;
+    int s[a];
+    for(int i=0;i<a;i++)
+    {
+    cin>>s[i];
+    }
+    for (int i = 0; i < (1 << a); ++i) {
+        bitset<32> mask(i);
+        int sum = 0;
+        for (int j = 0; j < a; ++j) {
+            if (mask[j]) {
+                sum += s[j];
+            }
+        }
+        if (sum == b) {
+            {
+                cout<<"YES"<<endl;
+                return 0;
+            }
+        }
+    }
+    cout<<"NO"<<endl;
 }
-sum=sum*n;
-while(s.size>1)
-{
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        solve();
+    }
 
-
-    
-}
 }

@@ -1,0 +1,1 @@
+{"name":"Local: payment","url":"/Users/rayhanahmedjeyam/Programming/payment.cpp","tests":[{"id":1717046804023,"input":"4\n1 2 3 4\n1 2 3 6\n5 2 6 27\n3 3 5 18","output":"YES\nNO\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/payment.cpp","group":"local","local":true}

@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+double average(int a[], int n, int i, int sum) {
+    if (i == n)
+        return sum / static_cast<double>(n); 
+    else {
+        sum += a[i];
+        return average(a, n, i + 1, sum); 
+    }
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    
+    int *a = new int[n]; // Dynamically allocate memory for the array
+
+    cout << "Enter the elements: ";
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+
+    double ans = average(a, n, 0, 0);
+    cout << "Average: " << ans << endl;
+
+    delete[] a; // Deallocate memory
+
+    return 0;
+}

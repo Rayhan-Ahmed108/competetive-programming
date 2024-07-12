@@ -1,0 +1,1 @@
+{"name":"Local: mountain","url":"/Users/rayhanahmedjeyam/Programming/mountain.cpp","tests":[{"id":1720162459230,"input":"+-+-+++--+--\n","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/mountain.cpp","group":"local","local":true}

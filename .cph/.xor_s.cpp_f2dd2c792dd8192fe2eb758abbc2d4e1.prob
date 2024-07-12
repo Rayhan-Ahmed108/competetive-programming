@@ -1,0 +1,1 @@
+{"name":"Local: xor_s","url":"/Users/rayhanahmedjeyam/Programming/xor_s.cpp","tests":[{"id":1718273635366,"input":"4\n0 1\n12 4\n57 37\n316560849 14570961\n","output":"1\n8\n4\n33554432\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Programming/xor_s.cpp","group":"local","local":true}
