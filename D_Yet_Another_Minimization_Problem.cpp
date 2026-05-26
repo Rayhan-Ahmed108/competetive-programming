@@ -49,10 +49,6 @@ int ceil_div(int a, int b) {return a % b == 0 ? a / b : a / b + 1;}
 int lcm(int a, int b){ if(a*b==0) return 0; else return a*b/__gcd(a,b);}
 int binexp( int a,int b){ int ans=1; a=a%mod; while(b){if(b&1){ans=(ans*a)%mod;}a=(a*a)%mod;b>>=1;}return ans;}
 bool isPrime(int n){if(n<=1)return false;if(n<=3)return true;if(n%2==0||n%3==0)return false;for(int i=5;i*i<=n;i=i+6)if(n%i==0||n%(i+2)==0)return false;return true;}
-
-
-
-
 int legend(int n, int x) {
     int ans = 0;
     while(n) {
@@ -61,7 +57,6 @@ int legend(int n, int x) {
     }
     return ans;
 }
-
 bool isSquare(int n) {
     if (n < 0) return false; 
         int root = sqrt(n);

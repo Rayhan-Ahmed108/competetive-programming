@@ -21,13 +21,13 @@ using namespace std;
 #define print(ar)         for(auto x: arr)cout<<x<<" ";nl;
 #define pq1      priority_queue<int, vector<int>, greater<int>> pq1;
 
-#ifdef DEBUG
-#include<algo/debug.h>
-#else
-#   define clog if (0) cerr
-#   define NB 40
-#   define db(...) "" 
-#endif
+// #ifdef DEBUG
+// #include<algo/debug.h>
+// #else
+// #   define clog if (0) cerr
+// #   define NB 40
+// #   define db(...) "" 
+// #endif
 
 const long long INF = 1e18;
 int dx[8] = {0,1,0,-1,1,-1,1,-1};
@@ -74,66 +74,66 @@ const int dy1[] = {0, 0, -1, 1};
 //     return (x >= 0 && x < n && y >= 0 && y < m);
 // }
 
-
-
 void sol(){
 int n;
 cin >> n;
-if(n == 1 or n == 3) {
-    cout << "First" << endl;
-    return;
+vector<string>v(n);
+for(int i = 0; i < n; i++) {
+    cin >> v[i];
 }
-if(n == 2) {
-    cout << "Second" << endl;
-    return;
-}
-if(n % 2 == 0) {
-    cout << "First" << endl;
-    return;
-}
-if(isPrime(n)) {
-    cout << "Second" << endl;
-    return;
-}
-vector<int>v;
-for(int i = 3; i * i <= n; i++) {
-    if(n % i == 0) {
-        if(i != 3) {
-            v.push_back(i);
+int count = 0, ans1 = 0, ans2 = 0;
+for(int i = 0; i < n; i++) {
+    for(int j = 0; j < n; j++) {
+        if(v[i][j] == '1') {
+            count++;
         }
-            if(1LL*i*i != n) {
-                v.push_back(n / i);
-            }
     }
 }
-for(int i = 0; i < v.size(); i++) {
-    if(isPrime(v[i])) {
-        cout << "First" << endl;
-        return;
+for(int i = 0; i < n; i++) {
+    int row = 0;
+    for(int j = 0; j < n; j++) {
+        if(v[i][j] == '0') {
+            row++;
+        }
+    }
+    if(n - row + count - row == n) {
+        ans1 = 1;
+        break;
     }
 }
-map<int, int>m;
-for(int i = 3; i * i <= n; i += 2) {
-    while(n % i == 0) {
-        m[i]++;
-        n /= i;
+for(int i = 0; i < n; i++) {
+    int col = 0;
+    for(int j = 0; j < n; j++) {
+        if(v[j][i] == '1') {
+            col++;
+        }
+    }
+    if(n - col + count - col == n) {
+        ans2 = 1;
     }
 }
-if(m[3] >= 3) {
-    cout << "First" << endl;
+if(ans1 == ans2) {
+cout << '+' << endl;
+return;
+}
+if(ans1 == 1) {
+    cout << '|' << endl;
     return;
 }
-cout << "Second" << endl;
-return;
+else {
+    cout << '-' << endl;
+}
+
+
 }
     
 int32_t main()
 {
     FAST_IO
-    //freopen("input.txt", "r", stdin);
-    //freopen("output.txt", "w", stdout);
-    int t;
-    cin >> t;
-    while(t--)
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
+    // int t;
+    // cin >> t;
+    // while(t--)
     sol();
 }

@@ -1,0 +1,1 @@
+{"name":"Local: HH","url":"/Users/rayhanahmedjeyam/Codeforces/HH.cpp","tests":[{"id":1758885144611,"input":"10\n1000010000\n","output":""},{"id":1758885151914,"input":"4\n1011","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Codeforces/HH.cpp","group":"local","local":true}

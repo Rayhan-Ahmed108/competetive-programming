@@ -1,0 +1,1 @@
+{"name":"Local: seven","url":"/Users/rayhanahmedjeyam/Codeforces/seven.cpp","tests":[{"id":1757602536894,"input":"6\n4\n1\n22\n10\n100\n12345","output":"4\n1\n26\n12\n144\n30091"},{"id":1757602690531,"input":"1\n47","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Codeforces/seven.cpp","group":"local","local":true}

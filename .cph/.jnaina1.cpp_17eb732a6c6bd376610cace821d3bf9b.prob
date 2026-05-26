@@ -1,0 +1,1 @@
+{"name":"Local: jnaina1","url":"/Users/rayhanahmedjeyam/Codeforces/jnaina1.cpp","tests":[{"id":1765294222877,"input":"2\n2 4\n3 3","output":"abbbba\nbabbab\n-1"},{"id":1765294665758,"input":"1\n4 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Codeforces/jnaina1.cpp","group":"local","local":true}

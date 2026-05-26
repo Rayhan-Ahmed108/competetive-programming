@@ -79,12 +79,11 @@ void sol(){
 
 int n;
 cin >> n;
-if(n == 1) {
+if(n % 3 == 1) {
     cout << "Esteche" << endl;
     return;
 }
 cout << "Yvens" << endl;
-
 }
     
 int32_t main()

@@ -3,6 +3,8 @@
         "vector": "cpp",
         "iostream": "cpp",
         "tuple": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "string": "cpp",
+        "stack": "cpp"
     }
 }

@@ -1,0 +1,1 @@
+{"name":"Local: EE","url":"/Users/rayhanahmedjeyam/Codeforces/EE.cpp","tests":[{"id":1758880861268,"input":"6\naaaaba\nhello\npalindrome\nabba\nx\nbababac\n","output":"1\n2\n5\n0\n0\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Codeforces/EE.cpp","group":"local","local":true}

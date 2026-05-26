@@ -1,0 +1,1 @@
+{"name":"Local: cod_A","url":"/Users/rayhanahmedjeyam/Codeforces/cod_A.cpp","tests":[{"id":1758638771155,"input":"2\n3\nprint: 7\nprint: 3\nprintSum\n3\nprintSum\nprint: 10\nprintSum","output":"7\n3\n10\n-1\n10\n10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Codeforces/cod_A.cpp","group":"local","local":true}

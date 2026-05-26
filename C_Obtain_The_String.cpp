@@ -50,9 +50,6 @@ int lcm(int a, int b){ if(a*b==0) return 0; else return a*b/__gcd(a,b);}
 int binexp( int a,int b){ int ans=1; a=a%mod; while(b){if(b&1){ans=(ans*a)%mod;}a=(a*a)%mod;b>>=1;}return ans;}
 bool isPrime(int n){if(n<=1)return false;if(n<=3)return true;if(n%2==0||n%3==0)return false;for(int i=5;i*i<=n;i=i+6)if(n%i==0||n%(i+2)==0)return false;return true;}
 
-
-
-
 int legend(int n, int x) {
     int ans = 0;
     while(n) {
@@ -73,31 +70,32 @@ const int dy1[] = {0, 0, -1, 1};
 // bool isValid(int x, int y) {
 //     return (x >= 0 && x < n && y >= 0 && y < m);
 // }
-
-
-
+vector<vector<int>>nxt;
 void sol(){
 string s, t;
 cin >> s >> t;
-map<char, int>m1;
-for(int i = 0; i < s.size(); i++) {
-    m1[s[i]]++;
+nxt.assign(s.length() + 1, vi(26, -1));
+int n = s.size(), m = t.size();
+for(int i = n-1; i >= 0; i--) {
+    nxt[i] = nxt[i+1];
+    nxt[i][s[i]-'a'] = i;
 }
-for(int i = 0; i < t.size(); i++) {
-    if(!m1[t[i]]) {
+int ans = 0;
+for(int i = 0; i < m;) {
+    int j = i, pos = 0;
+    while(j < m and nxt[pos][t[j] - 'a'] != -1) {
+        pos = nxt[pos][t[j]-'a']+1;
+        ++j;
+    }
+    if(i == j) {
         cout << -1 << endl;
         return;
     }
+    ans++;
+    i = j;
 }
-if(s == t) {
-    cout << 0 << endl;
-    return;
+cout << ans << endl;
 }
-
-
-
-}
-    
 int32_t main()
 {
     FAST_IO

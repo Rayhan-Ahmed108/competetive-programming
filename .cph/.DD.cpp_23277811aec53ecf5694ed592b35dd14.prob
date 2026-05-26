@@ -1,0 +1,1 @@
+{"name":"Local: DD","url":"/Users/rayhanahmedjeyam/Codeforces/DD.cpp","tests":[{"id":1758878764083,"input":"5\n0\n1\n2\n10\n100000\n","output":"0.000000000000000\n1.000000000000000\n1.500000000000000\n2.928968253968254\n12.090146129863335"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rayhanahmedjeyam/Codeforces/DD.cpp","group":"local","local":true}

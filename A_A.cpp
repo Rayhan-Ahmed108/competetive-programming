@@ -9,8 +9,8 @@
 using namespace __gnu_pbds;
 using namespace std;
 #define int     long long int
-#define yes     cout << "YES\n";
-#define no      cout << "NO\n"; 
+#define yes     cout << "Yes\n";
+#define no      cout << "No\n"; 
 #define pb      push_back;
 #define in(n)   int n; cin >> n;
 #define pq      priority_queue<pair<int,int>>
@@ -21,13 +21,7 @@ using namespace std;
 #define print(ar)         for(auto x: arr)cout<<x<<" ";nl;
 #define pq1      priority_queue<int, vector<int>, greater<int>> pq1;
 
-#ifdef DEBUG
-#include<algo/debug.h>
-#else
-#   define clog if (0) cerr
-#   define NB 40
-#   define db(...) "" 
-#endif
+
 
 const long long INF = 1e18;
 int dx[8] = {0,1,0,-1,1,-1,1,-1};
@@ -74,22 +68,23 @@ const int dy1[] = {0, 0, -1, 1};
 //     return (x >= 0 && x < n && y >= 0 && y < m);
 // }
 void sol(){
-int n, need = 2, res = 0;
-cin >> n;
-while(need < n) {
-    int x = 1, ans = n - need;
-    res += (1LL * ans * (ans + 1)) / 2 + 1;
-    need += 2;
+int m;
+cin >> m;
+if(m > 24) {
+    yes
+    return;
 }
-cout << res << endl;
+no
 }
+    
+
 int32_t main()
 {
     FAST_IO
     // freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
-    // int t;
-    // cin >> t;
-    // while(t--)
+    int t;
+    cin >> t;
+    while(t--)
     sol();
 }

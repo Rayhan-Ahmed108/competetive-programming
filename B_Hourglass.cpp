@@ -73,9 +73,6 @@ const int dy1[] = {0, 0, -1, 1};
 // bool isValid(int x, int y) {
 //     return (x >= 0 && x < n && y >= 0 && y < m);
 // }
-
-
-
 void sol(){
 int a, b, c, ans = 0;
 cin >> a >> b >> c;

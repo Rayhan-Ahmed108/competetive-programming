@@ -74,89 +74,51 @@ const int dy1[] = {0, 0, -1, 1};
 // }
 
 
-const int N = 1e6 + 5;
-vector<bool> is_prime(N, true); 
-void sieve(int n) {
-    is_prime[0] = is_prime[1] = false;
+// void sieve() {
+//     is_prime[0] = is_prime[1] = false;
 
-    for (int i = 2; i * i <= n; ++i) {
-        if (is_prime[i]) {
-            for (int j = i * i; j <= n; j += i)
-                is_prime[j] = false;
-        }
-    }
-}
-
-
+//     for (int i = 2; i * i <= N; ++i) {
+//         if (is_prime[i]) {
+//             for (int j = i * i; j <= N; j += i)
+//                 is_prime[j] = false;
+//         }
+//     }
+// }
 void sol(){
-sieve(n);
-int n, evevn = 0;
+int n;
 cin >> n;
-if(n%2 == 0) {
-    evevn = n;
-}
-else {
-    evevn = n-1;
-}
-vector<int>v(n+1, 0);
-vector<bool>vis(n+1, false);
-set<int>s, s1;
+vi v(n+1);
+vector<bool> is_prime(n+1, true); 
 
-vis[1] = true;
+is_prime[0] = is_prime[1] = false;
+for (int i = 2; i * i <= n; ++i) {
+    if (is_prime[i]) {
+        for (int j = i * i; j <= n; j += i)
+            is_prime[j] = false;
+    }
+}
+vector<bool>vis(n+1);
 v[1] = 1;
-for(int i = 1; i <= n; i++) {
-    if(is_prime(i)) {
-        if(i*2 < n) {
-            v[i] = i;
-            vis[i] = true;
-        }
-    }
-
-}
-for(int i = 2; i <= n; i += 2) {
-    if(vis[i]) continue;
-    s.insert(i);
-}
-for(int i = 1; i <= n; i++) {
-    if(vis[i]) continue;
-    s1.insert(i);
-}
-vi v2, v3;
-for(auto it : s) {
-    v2.push_back(it);
-}
-for(auto it : s1) {
-    v3.push_back(it);
-}
-int kl = s.size(), j = kl - 1, kp = s1.size() - 1;;
-for(int i = 1; i <= n; i++) {
-    if(vis[i]) continue;
-    if(i % 2 == 0) {
-        v[i] = v2[j];
-        j--;
-        vis[i] = true;
-    }
-    else {
-        if(is_prime(i)) {
-            if(vis[i]) continue;
-            else {
-                v[i] = i;
+for(int i = n; i >= 2; i--) {
+    if(is_prime[i]) {
+        vi v1;
+        for(int j = i; j <= n; j += i) {
+            if(!vis[j]) {
+                vis[j] = true;
+                v1.push_back(j);
             }
         }
-        else {
-            v[i] = kp;
-            kp--;
+        for(int k = 0; k < v1.size(); k++) {
+            v[v1[k]] = v1[(k + 1) % v1.size()];
         }
     }
 }
-
-for(auto it : v) cout << it << ' ';cout << endl;
-
+for(int i = 1; i <= n; i++) cout << v[i] << ' ';cout << endl;
 }
-    
 int32_t main()
 {
     FAST_IO
+    //sieve();
     int t;
     cin >> t;
     while(t--)

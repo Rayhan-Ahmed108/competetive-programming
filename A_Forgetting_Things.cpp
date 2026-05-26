@@ -1,0 +1,68 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <map>
+#include <set>
+#include <queue>
+#include <stack>
+#include <cstring>
+using namespace std;
+#define endl "\n"
+const int mod = 1e9 + 7;
+const long long INF = 1e18;
+#define FAST_IO                           \
+    {                                     \
+        ios_base::sync_with_stdio(false); \
+        cin.tie(0);                       \
+    }
+
+int binexp( int a,int b){ int ans=1; a=a%mod; while(b){if(b&1){ans=(ans*a)%mod;}a=(a*a)%mod;b>>=1;}return ans;}
+bool isPrime(int n){if(n<=1)return false;if(n<=3)return true;if(n%2==0||n%3==0)return false;for(int i=5;i*i<=n;i=i+6)if(n%i==0||n%(i+2)==0)return false;return true;}
+
+#define vi      vector<int>
+#define int     long long int
+#define yes     cout << "YES\n";
+#define no      cout << "NO\n"; 
+
+void sol() {
+int a, b;
+cin >> a >> b;
+
+if(abs(a - b) > 1) {
+    if(a == 1 or b == 1) {
+        if(b == 1 and a == 9) {
+            cout << a << ' ' << 10 << endl;
+            return;
+        }
+        cout << -1 << endl;
+        return;
+    }
+    cout << -1 << endl;
+    return;
+}
+if(a == b) {
+    cout << a << '1' << ' ' << b << '2' << endl;
+    return;
+}
+if(a > b) {
+    cout << -1 << endl;
+    return;
+}
+if(a < b) {
+    cout << a << '9' << ' ' << b << '0' << endl;
+    return;
+}
+cout << -1 << endl;return;
+}
+
+int32_t main()
+{
+    FAST_IO
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
+    // int t;
+    // cin >> t;
+    // while(t--)
+    sol();
+}

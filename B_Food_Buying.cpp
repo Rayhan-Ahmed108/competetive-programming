@@ -73,9 +73,6 @@ const int dy1[] = {0, 0, -1, 1};
 // bool isValid(int x, int y) {
 //     return (x >= 0 && x < n && y >= 0 && y < m);
 // }
-
-
-
 void sol(){
 int n;
 cin >> n;
@@ -92,7 +89,6 @@ if(n < 10) {
 }
 }
 }
-    
 int32_t main()
 {
     FAST_IO
